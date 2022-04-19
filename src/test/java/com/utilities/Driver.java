@@ -29,6 +29,8 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("headless");
+                    options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-setuid-sandbox");
                     driver = new ChromeDriver(options);
                     break;
                 case "firefox" :

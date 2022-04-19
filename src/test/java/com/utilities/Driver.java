@@ -27,7 +27,9 @@ public class Driver {
             switch (ConfigReader.getProperty("browser")){
                 case "chrome" :
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("headless");
+                    driver = new ChromeDriver(options);
                     break;
                 case "firefox" :
                     WebDriverManager.firefoxdriver().setup();

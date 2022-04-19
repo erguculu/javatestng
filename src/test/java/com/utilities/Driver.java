@@ -27,11 +27,12 @@ public class Driver {
             switch (ConfigReader.getProperty("browser")){
                 case "chrome" :
                     WebDriverManager.chromedriver().setup();
-                    ChromeOptions options = new ChromeOptions();
+                   ChromeOptions options = new ChromeOptions();
                     options.addArguments("headless");
                     options.addArguments("--no-sandbox");
                     options.addArguments("--disable-setuid-sandbox");
                     driver = new ChromeDriver(options);
+                    //driver = new ChromeDriver();
                     break;
                 case "firefox" :
                     WebDriverManager.firefoxdriver().setup();

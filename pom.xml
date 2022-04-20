@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>mytestNGframework</artifactId>
+    <artifactId>javatestNG</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -21,6 +21,13 @@
     </build>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.10.1</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -40,7 +47,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.1.0</version>
+            <version>7.5</version>
             <scope>test</scope>
         </dependency>
 
@@ -69,13 +76,6 @@
             <version>1.7.30</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.0.0-M6</version>
-        </dependency>
-
 
     </dependencies>
 

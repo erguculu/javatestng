@@ -31,6 +31,7 @@ public class Driver {
                     options.addArguments("headless");
                     options.addArguments("--no-sandbox");
                     options.addArguments("--disable-setuid-sandbox");
+                    options.addArguments("--disable-dev-shm-usage");
                     driver = new ChromeDriver(options);
                     //driver = new ChromeDriver();
                     break;
@@ -53,7 +54,7 @@ public class Driver {
             }
 
         }
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
     }
